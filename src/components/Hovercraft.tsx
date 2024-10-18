@@ -5,18 +5,18 @@ const Hovercraft: React.FC = () => {
   const [offsetY, setOffsetY] = useState(0);
   const [visible, setVisible] = useState(false);
   const images = [
-    "/src/assets/Hovercraft2.png",
-    "/src/assets/hovercraft/Deteccionazulesrojos.png",
-    "/src/assets/hovercraft/3Dmodel.jpg",
-    "/src/assets/hovercraft/HovercraftOnWater.jpg",
+    "/Hovercraft2.png",
+    "/hovercraft/Deteccionazulesrojos.png",
+    "/hovercraft/3Dmodel.jpg",
+    "/hovercraft/HovercraftOnWater.jpg",
   ];
 
   const videos = {
-    trial: "/src/assets/hovercraft/ArtificialVisionTrialInBoat.mp4",
-    competition: "/src/assets/hovercraft/Competencia.mp4",
-    servoTest: "/src/assets/hovercraft/Brushless-direction.mp4",
-    terrestial: "/src/assets/hovercraft/TerrestialTest.mp4",
-    lift: "/src/assets/hovercraft/liftTest.mp4",
+    trial: "/hovercraft/ArtificialVisionTrialInBoat.mp4",
+    competition: "/hovercraft/Competencia.mp4",
+    servoTest: "/hovercraft/Brushless-direction.mp4",
+    terrestial: "/hovercraft/TerrestialTest.mp4",
+    lift: "/hovercraft/liftTest.mp4",
   };
 
   const handleScroll = () => {
@@ -129,7 +129,7 @@ const Hovercraft: React.FC = () => {
           </div>
           <div className="rounded-3xl"
               style={{
-                backgroundImage: `url(/src/assets/hovercraft/mdf-model.jpg)`,
+                backgroundImage: `url(/hovercraft/mdf-model.jpg)`,
                 width: '100%',
                 height: '700px',
                 backgroundSize: 'cover',
@@ -166,7 +166,7 @@ const Hovercraft: React.FC = () => {
           </div>
           <div className="rounded-3xl"
               style={{
-                backgroundImage: `url(/src/assets/hovercraft/DesignEvolution.png)`,
+                backgroundImage: `url(/hovercraft/DesignEvolution.png)`,
                 width: '100%',
                 height: '600px',
                 backgroundSize: 'cover',
@@ -182,7 +182,7 @@ const Hovercraft: React.FC = () => {
           </div>
           <div className="rounded-3xl"
               style={{
-                backgroundImage: `url(/src/assets/hovercraft/Chasis.JPG)`,
+                backgroundImage: `url(/hovercraft/Chasis.JPG)`,
                 width: '100%',
                 height: '600px',
                 backgroundSize: 'cover',
@@ -204,7 +204,7 @@ const Hovercraft: React.FC = () => {
           </div>
           <div className="rounded-3xl"
               style={{
-                backgroundImage: `url(/src/assets/hovercraft/Circuit.png)`,
+                backgroundImage: `url(/hovercraft/Circuit.png)`,
                 width: '100%',
                 height: '600px',
                 backgroundSize: 'cover',
@@ -253,7 +253,7 @@ const Hovercraft: React.FC = () => {
           </div>
           <div className="rounded-3xl"
               style={{
-                backgroundImage: `url(/src/assets/hovercraft/Deteccionazulesrojos.png)`,
+                backgroundImage: `url(/hovercraft/Deteccionazulesrojos.png)`,
                 width: '100%',
                 height: '600px',
                 backgroundSize: 'cover',

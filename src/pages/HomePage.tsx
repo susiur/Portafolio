@@ -74,7 +74,7 @@ const Home: React.FC = () => {
           ref={lssegRef}
           className="min-h-screen snap-start flex items-end justify-center bg-cover bg-center relative"
           style={{
-            backgroundImage: 'url(/src/assets/LSSEG.png)'
+            backgroundImage: 'url(/LSSEG.png)'
           }}
         >
           <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-lsseg_secondary to-transparent"></div>
@@ -97,7 +97,7 @@ const Home: React.FC = () => {
           ref={labcoatRef}
           className="min-h-screen snap-start flex items-end justify-center bg-cover bg-center relative"
           style={{
-            backgroundImage: 'url(/src/assets/labcoat.png)'
+            backgroundImage: 'url(/labcoat.png)'
           }}
         >
           <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-lab_secondary to-transparent"></div>
@@ -120,7 +120,7 @@ const Home: React.FC = () => {
           ref={apptibiogramRef}
           className="min-h-screen snap-start flex items-end justify-center bg-cover bg-center relative"
           style={{
-            backgroundImage: 'url(/src/assets/apptibiogram.png)'
+            backgroundImage: 'url(/apptibiogram.png)'
           }}
         >
           <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-apptibiogram_secondary to-transparent"></div>
@@ -143,7 +143,7 @@ const Home: React.FC = () => {
           ref={hovercraftRef}
           className="min-h-screen snap-start flex items-end justify-center bg-cover bg-center relative"
           style={{
-            backgroundImage: 'url(/src/assets/Hovercraft2.png)'
+            backgroundImage: 'url(/Hovercraft2.png)'
           }}
         >
           <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-hovercraft_secondary to-transparent"></div>
@@ -166,7 +166,7 @@ const Home: React.FC = () => {
           ref={portfolioRef}
           className="min-h-screen snap-start flex items-end justify-center bg-cover bg-center relative"
           style={{
-            backgroundImage: 'url(/src/assets/webpage.png)'
+            backgroundImage: 'url(/webpage.png)'
           }}
         >
           <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-portfolio_secondary to-transparent"></div>
@@ -189,7 +189,7 @@ const Home: React.FC = () => {
           ref={teethRef}
           className="min-h-screen snap-start flex items-end justify-center bg-cover bg-center relative"
           style={{
-            backgroundImage: 'url(/src/assets/teeth.png)'
+            backgroundImage: 'url(/teeth.png)'
           }}
         >
           <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-teeth_secondary to-transparent"></div>

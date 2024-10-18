@@ -5,8 +5,8 @@ const Apptibiogram: React.FC = () => {
   const [offsetY, setOffsetY] = useState(0);
   const [visible, setVisible] = useState(false); // Estado para controlar la visibilidad
   const images = [
-    "/src/assets/apptibiogram.png",
-    "/src/assets/apptibiogram/newHome.png",
+    "/apptibiogram.png",
+    "/apptibiogram/newHome.png",
     "src/assets/apptibiogram/old_data.png"
   ];
 
@@ -155,7 +155,7 @@ const Apptibiogram: React.FC = () => {
 
           <div className="relative w-full max-w-4xl mb-8 flex flex-col items-center">
             <video controls className="rounded-lg shadow-lg animate-fadeIn">
-              <source src="/src/assets/apptibiogram/mockup.mp4" type="video/mp4" />
+              <source src="/apptibiogram/mockup.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <h3 className="text-center mt-4 p-4">

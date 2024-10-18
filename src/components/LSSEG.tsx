@@ -5,8 +5,8 @@ const LSSEG: React.FC = () => {
   const [offsetY, setOffsetY] = useState(0);
   const [visible, setVisible] = useState(false); // Estado para controlar la visibilidad
   const images = [
-    "/src/assets/LSSEG.png",
-    "/src/assets/lsseg/slicer_preview.png",
+    "/LSSEG.png",
+    "/lsseg/slicer_preview.png",
     "src/assets/lsseg/simulation.jpg",
     "src/assets/lsseg/angle.jpg"
   ];

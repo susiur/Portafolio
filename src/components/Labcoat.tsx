@@ -5,10 +5,10 @@ const Labcoat: React.FC = () => {
   const [offsetY, setOffsetY] = useState(0);
   const [visible, setVisible] = useState(false); 
   const images = [
-    "/src/assets/labcoat.png", 
-    "/src/assets/labcoat/labcoat_preview.png",
-    "/src/assets/labcoat/app.png",
-    "/src/assets/labcoat/labcoat_positive.png"
+    "/labcoat.png", 
+    "/labcoat/labcoat_preview.png",
+    "/labcoat/app.png",
+    "/labcoat/labcoat_positive.png"
   ];
 
   const handleScroll = () => {
