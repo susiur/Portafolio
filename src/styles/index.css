@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, button, a, input, select, textarea {
+    cursor: none; 
+  }
+  
+  #custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    pointer-events: none; /* Para que no interfiera con el clic */
+    mix-blend-mode: difference; /* Invierte los colores */
+    background-color: white; /* Color blanco que se invertirá */
+    z-index: 9999; /* Para que esté por encima de todo */
+    transition: transform 0.1s ease; /* Animación suave */
+  }
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .snap-mandatory {
+    scroll-snap-type: y mandatory;
+  }
+  
+  .snap-start {
+    scroll-snap-align: start;
+  }
+
+  button {
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+   /* Ocultar scroll bar en navegadores web 
+   ::-webkit-scrollbar {
+    display: none;
+  }
+  /* Ocultar scroll en todos los navegadores 
+  body {
+    scrollbar-width: none;
+    overflow: hidden;      
+  }*/
+  
+ 

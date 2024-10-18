@@ -1,0 +1,56 @@
+[
+  {
+    "name": "LSSEG",
+    "image": "/src/assets/LSSEG2.jpg",
+    "link": "/lsseg",
+    "color": "#0d0d0c",
+    "secondaryColor": "#d1d2d0",
+    "description": "Semi-Automatic Segmentation Methods for Lumbar Spine MRI in 3D Slicer",
+    "buttonText": "Learn more"
+  },
+  {
+    "name": "Labcoat",
+    "image": "/src/assets/labcoat.png",
+    "link": "/labcoat",
+    "color": "#1b282b",
+    "secondaryColor": "#ecf1f5",
+    "description": "Computer vision for labcoat detection",
+    "buttonText": "Learn more"
+  },
+  {
+    "name": "Apptibiogram",
+    "image": "/src/assets/apptibiogram.png",
+    "link": "/apptibiogram",
+    "color": "#5DAAE8",
+    "secondaryColor": "#ffffff",
+    "description": "Clone of the Apptibiogram app for analyzing antibiograms",
+    "buttonText": "Learn more"
+  },
+  {
+    "name": "Hovercraft",
+    "image": "/src/assets/Hovercraft2.png",
+    "link": "/hovercraft",
+    "color": "#e76c00",
+    "secondaryColor": "#171717",
+    "description": "Small hovercraft with artificial vision",
+    "buttonText": "Learn more"
+  },
+  {
+    "name": "Portfolio",
+    "image": "/src/assets/webpage.png",
+    "link": "/portfolio",
+    "color": "#4e524c",
+    "secondaryColor": "#f7c9bd",
+    "description": "My portfolio website using React, Tailwind CSS, and Vercel",
+    "buttonText": "Learn more"
+  },
+  {
+    "name": "Dental Classifier",
+    "image": "/src/assets/teeth.png",
+    "link": "/teeth",
+    "color": "#0c1722",
+    "secondaryColor": "#d5c4b3",
+    "description": "Classify teeth with artificial vision",
+    "buttonText": "Learn more"
+  }
+]
