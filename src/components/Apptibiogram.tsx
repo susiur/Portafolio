@@ -3,7 +3,7 @@ import ProjectGallery from "./ProjectGallery";
 
 const Apptibiogram: React.FC = () => {
   const [offsetY, setOffsetY] = useState(0);
-  const [visible, setVisible] = useState(false); // Estado para controlar la visibilidad
+  const [visible, setVisible] = useState(false);
   const images = [
     "/apptibiogram.png",
     "/apptibiogram/newHome.png",

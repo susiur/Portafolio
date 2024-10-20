@@ -1,10 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 body, button, a, input, select, textarea {
     cursor: none; 
-  }
+  } */
   
   #custom-cursor {
     position: fixed;

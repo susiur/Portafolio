@@ -6,7 +6,7 @@ const  Portfolio: React.FC = () => {
   const [visible, setVisible] = useState(false); // Estado para controlar la visibilidad
   const images = [
     "/webpage.png",
-    "/lsseg/slicer_preview.png",
+    "/webpage/image.png",
     "src/assets/lsseg/workflow.png"
   ];
 
