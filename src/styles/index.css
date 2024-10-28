@@ -65,4 +65,13 @@ body, button, a, input, select, textarea {
     overflow: hidden;      
   }*/
   
+  #home-page {
+    /* Oculta la barra de scroll en navegadores modernos */
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  #home-page::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
  

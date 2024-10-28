@@ -7,8 +7,8 @@ const LSSEG: React.FC = () => {
   const images = [
     "/LSSEG.png",
     "/lsseg/slicer_preview.png",
-    "src/assets/lsseg/simulation.jpg",
-    "src/assets/lsseg/angle.jpg"
+    "/lsseg/simulation.jpg",
+    "/lsseg/angle.jpg"
   ];
 
   // Detect scroll for the parallax effect

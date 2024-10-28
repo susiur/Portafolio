@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+#home-page {
+  /* Oculta la barra de scroll en navegadores modernos */
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+}
+
+#home-page::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}

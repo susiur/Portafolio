@@ -19,6 +19,8 @@ export default {
         portfolio_secondary: "#f7c9bd",
         teeth_primary: "#d5c4b3",
         teeth_secondary: "#0c1722",
+        about_primary: "gray",
+        about_secondary: "black",
 
       },
       fontFamily: {

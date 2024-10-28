@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
@@ -9,39 +9,80 @@ const Home: React.FC = () => {
   const labcoatRef = useRef<HTMLDivElement>(null);
   const apptibiogramRef = useRef<HTMLDivElement>(null);
   const hovercraftRef = useRef<HTMLDivElement>(null);
-  const portfolioRef = useRef<HTMLDivElement>(null); // Nueva referencia para el portfolio
-  const teethRef = useRef<HTMLDivElement>(null); // Nueva referencia para Dental Classification
-  const aboutRef = useRef<HTMLDivElement>(null); // Nueva referencia para About
+  const portfolioRef = useRef<HTMLDivElement>(null); 
+  const teethRef = useRef<HTMLDivElement>(null); 
+  const aboutRef = useRef<HTMLDivElement>(null); 
 
   const sections = [
-    { ref: heroRef, label: '1' },
+    { ref: heroRef, label: 'H' },
     { ref: lssegRef, label: '2' },
     { ref: labcoatRef, label: '3' },
     { ref: apptibiogramRef, label: '4' },
     { ref: hovercraftRef, label: '5' },
     { ref: portfolioRef, label: '6' },
     { ref: teethRef, label: '7' },
-    { ref: aboutRef, label: '8' },
+    { ref: aboutRef, label: 'A' },
   ];
 
-  // Función para hacer scroll a la sección deseada
+  const colors = [
+    'white',    
+    'lsseg',   
+    'lab',  
+    'apptibiogram', 
+    'hovercraft', 
+    'portfolio',   
+    'teeth', 
+    'gray-400',   
+  ];
+
+  const [activeSection, setActiveSection] = useState<string | null>(null);
+
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = sections.findIndex((section) => section.ref.current === entry.target);
+            setActiveSection(sections[index].label);
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
+
+    sections.forEach((section) => {
+      if (section.ref.current) {
+        observer.observe(section.ref.current);
+      }
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="relative">
+    <div id="home-page" className="relative">
       {/* Círculos de navegación a la derecha */}
       <div className="fixed right-4 top-1/2 transform -translate-y-1/2 space-y-8 z-10">
         {sections.map((section, index) => (
           <button
             key={index}
             onClick={() => scrollToSection(section.ref)}
-            className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center text-dark-blue hover:bg-dark-blue hover:text-white"
+            className={`w-4 h-4 rounded-full flex items-center justify-center
+              transition-all duration-300 ${
+                activeSection === section.label
+                  ? `w-8 h-8 text-${colors[sections.findIndex(s => s.label === activeSection)]}_secondary bg-${colors[sections.findIndex(s => s.label === activeSection)]}_primary`
+                  : `bg-${colors[sections.findIndex(s => s.label === activeSection)]}_primary hover:w-8 hover:h-8`
+              }`}
           >
-            {section.label}
+            <span className={`${activeSection === section.label ? 'visible' : 'invisible'}`}>
+              {section.label}
+            </span>
           </button>
         ))}
       </div>
@@ -149,7 +190,7 @@ const Home: React.FC = () => {
           <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-hovercraft_secondary to-transparent"></div>
           <div className="relative text-center z-10 text-hovercraft_primary mb-20">
             <h2 className="text-6xl mb-6 font-heading text-hovercraft_primary">Hovercraft</h2>
-            <p className="text-2xl mb-12 font-subtitle text-white">
+            <p className="text-2xl mb-12 font-subtitle text-hovercraft_primary">
               Small hovercraft with artificial vision.
             </p>
             <br />
@@ -208,7 +249,9 @@ const Home: React.FC = () => {
           </div>
         </section>
 
-        <section className="min-h-screen flex flex-col snap-start relative bg-gray-900 text-gray-100">
+        <section
+        ref={aboutRef} 
+        className="min-h-screen flex flex-col snap-start relative bg-gray-900 text-gray-100">
           <header className="p-4 flex justify-between items-center">
             <div className="w-12 h-12 rounded-full overflow-hidden bg-cover bg-center"
               style={{backgroundImage: 'url(Yo.jpg)'}}/>
