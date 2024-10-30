@@ -15,12 +15,12 @@ const Home: React.FC = () => {
 
   const sections = [
     { ref: heroRef, label: 'H' },
-    { ref: lssegRef, label: '2' },
-    { ref: labcoatRef, label: '3' },
-    { ref: apptibiogramRef, label: '4' },
-    { ref: hovercraftRef, label: '5' },
-    { ref: portfolioRef, label: '6' },
-    { ref: teethRef, label: '7' },
+    { ref: lssegRef, label: '1' },
+    { ref: labcoatRef, label: '2' },
+    { ref: apptibiogramRef, label: '3' },
+    { ref: hovercraftRef, label: '4' },
+    { ref: portfolioRef, label: '5' },
+    { ref: teethRef, label: '6' },
     { ref: aboutRef, label: 'A' },
   ];
 

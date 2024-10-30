@@ -12,11 +12,11 @@ const Hovercraft: React.FC = () => {
   ];
 
   const videos = {
-    trial: "/hovercraft/ArtificialVisionTrialInBoat.mp4",
+    trial: "-9sBD8sP3qM",
     competition: "/hovercraft/Competencia.mp4",
-    servoTest: "/hovercraft/Brushless-direction.mp4",
+    servoTest: "vR2CVJwopvc",
     terrestial: "/hovercraft/TerrestialTest.mp4",
-    lift: "/hovercraft/liftTest.mp4",
+    lift: "ug3OcHv8ovA",
   };
 
   const handleScroll = () => {
@@ -141,10 +141,14 @@ const Hovercraft: React.FC = () => {
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between lg:space-x-8 mb-6">
             {/* Video a la derecha */}
             <div className="relative w-full max-w-sm lg:max-w-md flex-shrink-0">
-              <video controls className="rounded-lg shadow-lg animate-fadeIn">
-                <source src={videos.lift} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <iframe
+              className="rounded-lg shadow-lg animate-fadeIn"
+              height="515"
+              src={`https://www.youtube.com/embed/${videos.lift}`}
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
             </div>
             <div className="text-left max-w-lg mb-6 lg:mb-0">
               <p>
@@ -218,10 +222,15 @@ const Hovercraft: React.FC = () => {
             </p>
           </div>
           <div className="relative w-full max-w-4xl mb-8 flex flex-col items-center">
-            <video controls className="rounded-lg shadow-lg animate-fadeIn">
-              <source src={videos.servoTest} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              className="rounded-lg shadow-lg animate-fadeIn"
+              height="600px"
+              width="100%"
+              src={`https://www.youtube.com/embed/${videos.servoTest}`}
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
             <h3 className="text-center mt-4 p-4">
               Test of Servo and Brushless Motor using the radio control.
             </h3>
@@ -238,10 +247,15 @@ const Hovercraft: React.FC = () => {
             </p>
           </div>
           <div className="relative w-full max-w-4xl mb-8 flex flex-col items-center">
-            <video controls className="rounded-lg shadow-lg animate-fadeIn">
-              <source src={videos.trial} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              className="rounded-lg shadow-lg animate-fadeIn"
+              width="100%"
+              height="650"
+              src={`https://www.youtube.com/embed/${videos.trial}`}
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
             <h3 className="text-center mt-4 p-4">
               Test of color detection and navigation in the boat.
             </h3>
