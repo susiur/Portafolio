@@ -11,6 +11,7 @@ const Home: React.FC = () => {
   const hovercraftRef = useRef<HTMLDivElement>(null);
   const portfolioRef = useRef<HTMLDivElement>(null); 
   const teethRef = useRef<HTMLDivElement>(null); 
+  const demandPredictorRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null); 
 
   const sections = [
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
     { ref: hovercraftRef, label: '4' },
     { ref: portfolioRef, label: '5' },
     { ref: teethRef, label: '6' },
+    { ref: demandPredictorRef, label: '7' },
     { ref: aboutRef, label: 'A' },
   ];
 
@@ -33,6 +35,7 @@ const Home: React.FC = () => {
     'portfolio',   
     'teeth', 
     'gray-400',   
+    'tenderos',
   ];
 
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -243,6 +246,29 @@ const Home: React.FC = () => {
             <Link
               to="/teeth"
               className="bg-teeth_primary text-teeth_secondary text-2xl px-12 py-6 rounded-full shadow-lg hover:border hover:border-teeth_primary hover:bg-transparent hover:text-teeth_primary transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-light-blue"
+            >
+              Learn more
+            </Link>
+          </div>
+        </section>
+
+        <section
+          ref={demandPredictorRef}
+          className="min-h-screen snap-start flex items-end justify-center bg-cover bg-center relative"
+          style={{
+            backgroundImage: 'url(/tenderos.png)'
+          }}
+        >
+          <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-tenderos_secondary to-transparent"></div>
+          <div className="relative text-center z-10 text-white mb-20">
+            <h2 className="text-6xl mb-6 font-heading text-tenderos_primary">Tenderos</h2>
+            <p className="text-2xl mb-12 font-subtitle text-tenderos_primary">
+              Web application for store management wih demand prediction models.
+            </p>
+            <br />
+            <Link
+              to="/tenderos"
+              className="bg-tenderos_primary text-tenderos_secondary text-2xl px-12 py-6 rounded-full shadow-lg hover:border hover:border-tenderos_primary hover:bg-transparent hover:text-tenderos_primary transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-light-blue"
             >
               Learn more
             </Link>

@@ -10,6 +10,7 @@ import ApptibiogramPage from './pages/ApptibiogramPage';
 import HovercraftPage from './pages/HovercraftPage';
 import PortfolioPage from './pages/PortfolioPage';
 import TeethPage from './pages/TeethPage';
+import TenderosPage from './pages/TenderosPage';
 
 const App: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const App: React.FC = () => {
           <Route path="/hovercraft" element={<HovercraftPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/teeth" element={<TeethPage />} />
+          <Route path="/tenderos" element={<TenderosPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

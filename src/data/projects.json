@@ -52,5 +52,14 @@
     "secondaryColor": "#d5c4b3",
     "description": "Classify teeth with artificial vision",
     "buttonText": "Learn more"
+  },
+  {
+    "name": "Tenderos",
+    "image": "/tenderos.png",
+    "link": "/tenderos",
+    "color": "#4d0db2",
+    "secondaryColor": "#ffffff",
+    "description": "A web application for store management with demand prediction and product analytics",
+    "buttonText": "Learn more"
   }
 ]
